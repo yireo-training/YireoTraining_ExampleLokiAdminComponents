@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
+    <update handle="loki_admin_components_form"/>
+
+    <body>
+        <referenceContainer name="content">
+            <block
+                name="example_loki_admin_components.form"
+                template="Loki_AdminComponents::form.phtml">
+                <arguments>
+                    <argument name="fields" xsi:type="array">
+                        <item name="customer_id" xsi:type="array">
+                            <item name="field_type" xsi:type="string">customer_select</item>
+                        </item>
+                        <item name="product_id" xsi:type="array">
+                            <item name="field_type" xsi:type="string">product_select</item>
+                        </item>
+                        <item name="order_id" xsi:type="array">
+                            <item name="provider" xsi:type="string">Magento\Sales\Model\OrderRepository</item>
+                            <item name="resource_model" xsi:type="string">Magento\Sales\Model\ResourceModel\Order</item>
+                            <item name="field_type" xsi:type="string">entity_select</item>
+                            <item name="button_label" xsi:type="string">Select order</item>
+                            <item name="namespace" xsi:type="string">sales_order_grid</item>
+                        </item>
+
+                        <item name="store" xsi:type="array">
+                            <item name="label" xsi:type="string">Store View</item>
+                            <item name="caption" xsi:type="string">All Store Views</item>
+                            <item name="field_type" xsi:type="string">select</item>
+                            <item name="multiple" xsi:type="boolean">true</item>
+                            <item name="options" xsi:type="object">Loki\AdminComponents\ViewModel\Options\StoreViewOptions</item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

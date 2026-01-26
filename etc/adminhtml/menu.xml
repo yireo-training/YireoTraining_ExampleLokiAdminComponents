@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="YireoTraining_ExampleLokiAdminComponents::index" title="Example Loki Admin Components" module="YireoTraining_ExampleLokiAdminComponents" sortOrder="50" parent="Magento_Backend::content_elements" resource="YireoTraining_ExampleLokiAdminComponents::index" action="example_loki_admin_components/index/index" />
+    </menu>
+</config>
