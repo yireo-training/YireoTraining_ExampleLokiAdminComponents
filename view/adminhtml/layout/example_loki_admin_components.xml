@@ -23,6 +23,11 @@
                             <item name="namespace" xsi:type="string">sales_order_grid</item>
                         </item>
 
+                        <item name="example" xsi:type="array">
+                            <item name="field_type" xsi:type="string">input</item>
+                            <item name="input_type" xsi:type="string">hidden</item>
+                        </item>
+
                         <item name="store" xsi:type="array">
                             <item name="label" xsi:type="string">Store View</item>
                             <item name="caption" xsi:type="string">All Store Views</item>
