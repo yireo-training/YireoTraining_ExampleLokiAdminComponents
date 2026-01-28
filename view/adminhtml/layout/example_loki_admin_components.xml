@@ -12,9 +12,11 @@
                         <item name="customer_id" xsi:type="array">
                             <item name="field_type" xsi:type="string">customer_select</item>
                         </item>
+
                         <item name="product_id" xsi:type="array">
                             <item name="field_type" xsi:type="string">product_select</item>
                         </item>
+
                         <item name="order_id" xsi:type="array">
                             <item name="provider" xsi:type="string">Magento\Sales\Model\OrderRepository</item>
                             <item name="resource_model" xsi:type="string">Magento\Sales\Model\ResourceModel\Order</item>
@@ -25,7 +27,7 @@
 
                         <item name="example" xsi:type="array">
                             <item name="field_type" xsi:type="string">input</item>
-                            <item name="input_type" xsi:type="string">hidden</item>
+                            <item name="hidden" xsi:type="boolean">true</item>
                         </item>
 
                         <item name="store" xsi:type="array">
