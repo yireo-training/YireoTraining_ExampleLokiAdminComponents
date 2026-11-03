@@ -1,5 +1,21 @@
 {
     "module_name": "YireoTraining_ExampleLokiAdminComponents",
     "composer_name": "yireo-training/magento2-example-loki-admin-components",
-    "sequence": []
+    "sequence": [],
+    "php_versions": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4"
+    ],
+    "skip_magento_versions": [],
+    "skip_css_utils": false,
+    "modules": [],
+    "components": [
+        "example_loki_admin_components.form"
+    ],
+    "config": [],
+    "tests": [],
+    "phpcs_severity": 10,
+    "phpstan_level": 1
 }
