@@ -3,8 +3,13 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="YireoTraining_ExampleLokiAdminComponents::grid" title="YireoTraining ExampleLokiAdminComponents Grid" sortOrder="10"/>
-                <resource id="YireoTraining_ExampleLokiAdminComponents::form" title="YireoTraining ExampleLokiAdminComponents Form" sortOrder="10"/>
+                <resource id="Magento_Backend::content">
+                    <resource id="Magento_Backend::content_elements">
+                        <resource id="YireoTraining_ExampleLokiAdminComponents::index" title="Example Loki Admin Components" translate="title" sortOrder="50">
+                            <resource id="YireoTraining_ExampleLokiAdminComponents::form" title="Form" translate="title" sortOrder="10"/>
+                        </resource>
+                    </resource>
+                </resource>
             </resource>
         </resources>
     </acl>
