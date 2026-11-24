@@ -8,6 +8,9 @@
                 name="example_loki_admin_components.form"
                 template="Loki_AdminComponents::form.phtml">
                 <arguments>
+                    <argument name="acl_resource" xsi:type="string">YireoTraining_ExampleLokiAdminComponents::form</argument>
+                    <argument name="save_acl_resource" xsi:type="string">YireoTraining_ExampleLokiAdminComponents::form</argument>
+                    <argument name="delete_acl_resource" xsi:type="string">YireoTraining_ExampleLokiAdminComponents::form</argument>
                     <argument name="fields" xsi:type="array">
                         <item name="customer_id" xsi:type="array">
                             <item name="field_type" xsi:type="string">customer_select</item>
