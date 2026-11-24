@@ -2,25 +2,24 @@
 
 namespace YireoTraining\ExampleLokiAdminComponents\Controller\Adminhtml\Index;
 
+use Magento\Backend\App\Action;
+use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Page;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\View\Result\PageFactory as ResultPageFactory;
 
-class Index implements HttpGetActionInterface
+class Index extends Action implements HttpGetActionInterface
 {
-    /**
-     * ACL resource
-     */
-    const ADMIN_RESOURCE = 'YireoTraining_ExampleLokiAdminComponents::grid';
+    public const ADMIN_RESOURCE = 'YireoTraining_ExampleLokiAdminComponents::form';
 
     public function __construct(
+        Context $context,
         private ResultPageFactory $resultPageFactory,
     ) {
+        parent::__construct($context);
     }
 
     /**
-     * Index action
-     *
      * @return Page
      * @throws \Exception
      */
