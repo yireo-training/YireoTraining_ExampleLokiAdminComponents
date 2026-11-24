@@ -3,9 +3,7 @@
     "composer_name": "yireo-training/magento2-example-loki-admin-components",
     "sequence": [
         "Loki_AdminComponents",
-        "Loki_Components",
-        "Magento_Backend",
-        "Magento_Sales"
+        "Magento_Backend"
     ],
     "php_versions": [
         "8.1",
@@ -22,5 +20,5 @@
     "config": [],
     "tests": [],
     "phpcs_severity": "7",
-    "phpstan_level": "2"
+    "phpstan_level": "4"
 }
