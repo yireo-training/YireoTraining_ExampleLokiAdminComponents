@@ -9,9 +9,7 @@
         "magento/module-backend": "^101.0 | ^102.0",
         "php": ">=8.2 <8.6"
     },
-    "license": [
-        "OSL-3.0"
-    ],
+    "license": "OSL-3.0",
     "autoload": {
         "files": [
             "registration.php"
@@ -19,5 +17,8 @@
         "psr-4": {
             "YireoTraining\\ExampleLokiAdminComponents\\": ""
         }
+    },
+    "require-dev": {
+        "yireo/magento2-integration-test-helper": "~0.0"
     }
 }
