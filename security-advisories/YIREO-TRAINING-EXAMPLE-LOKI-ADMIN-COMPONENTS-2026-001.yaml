@@ -1,0 +1,36 @@
+schema_version: "1.6.0"
+id: YIREO-TRAINING-EXAMPLE-LOKI-ADMIN-COMPONENTS-2026-001
+published: "2026-11-26T00:00:00Z"
+modified: "2026-11-26T00:00:00Z"
+aliases: []
+summary: Admin page reachable without admin authentication and Loki form actions without ACL check
+details: >
+  In version 1.0.0 the admin controller example_loki_admin_components/index/index implemented
+  HttpGetActionInterface without extending Magento\Backend\App\Action. Because of this, Magento's admin
+  authentication plugin and ACL check were never applied, and the admin page of this module, including its
+  Loki form, could be opened without logging in to the Admin Panel. In addition, the Loki form loads, saves and
+  deletes on that page were not bound to any ACL resource, so any logged-in admin user could use them regardless
+  of their role. Version 1.0.1 makes the controller extend Magento\Backend\App\Action with the ACL resource
+  YireoTraining_ExampleLokiAdminComponents::form and binds the Loki form actions to that same resource.
+  Users of 1.0.0 should upgrade to 1.0.1 and review which admin roles are granted the new ACL resource.
+severity:
+  - type: CVSS_V3
+    score: "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+affected:
+  - package:
+      ecosystem: Packagist
+      name: yireo-training/magento2-example-loki-admin-components
+    ranges:
+      - type: ECOSYSTEM
+        events:
+          - introduced: "1.0.0"
+          - fixed: "1.0.1"
+references:
+  - type: PACKAGE
+    url: https://github.com/yireo-training/YireoTraining_ExampleLokiAdminComponents
+  - type: FIX
+    url: https://github.com/yireo-training/YireoTraining_ExampleLokiAdminComponents/releases/tag/1.0.1
+database_specific:
+  cwe_ids:
+    - CWE-306
+    - CWE-862
