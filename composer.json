@@ -1,6 +1,6 @@
 {
     "name": "yireo-training/magento2-example-loki-admin-components",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "N/A",
     "type": "magento2-module",
     "require": {
